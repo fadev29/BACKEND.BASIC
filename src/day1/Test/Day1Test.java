@@ -32,13 +32,13 @@ public class Day1Test {
 
         // nomor 2 :
         int[] angka = {1,2,3,4,5,6,7,8,9,10};
-        for (int i : angka){
             int angkaTerbesar = 0;
-            System.out.println("Angka terbesar : " + Math.max(angkaTerbesar,i));
+            int angkaTerkecil = 999;
+        for (int i = 0; i < angka.length; i++) {
+            System.out.println("angka terbesar : " + Math.max(angkaTerbesar,angka[i]));
         }
-        for(int i : angka){
-            int angkaTerkecil = 0;
-            System.out.println("Angaka terkecil : " + Math.min(angkaTerkecil,i));
+        for (int i = 0; i < angka.length; i++) {
+            System.out.println("angka terkecil : " + Math.min(angkaTerkecil,angka[i]));
         }
 
         // nomor 3 :
@@ -91,7 +91,6 @@ public class Day1Test {
              System.out.println();
          }
         System.out.println();
-
 
     }
 }
