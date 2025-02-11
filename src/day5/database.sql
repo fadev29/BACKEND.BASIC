@@ -83,11 +83,11 @@ add column rating int check (rating between 1 and 5);
 
 
 select * from product_reviews
-insert into product_reviews(review,product_id,customer_id)
-values ('baik',1,1),
-		('barang jelek',5,4),
-		('bagus',3,3),
-		('tidak sesuai',2,2);
+insert into product_reviews(review,rating,product_id,customer_id)
+values ('Baik', 5, 1, 1),
+    ('Barang jelek', 4, 5, 4),
+    ('Bagus', 4, 3, 3),
+    ('Tidak sesuai', 3, 2, 2);
 
 create table payment_details(
 id serial primary key,
